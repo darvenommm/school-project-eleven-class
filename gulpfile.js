@@ -28,6 +28,6 @@ const minifyCss = () => {
     .pipe(gulp.dest(resultDirectory));
 };
 
-export default gulp.series(gulp.parallel(copyStatic, minifyHtml, minifyCss));
+export default gulp.parallel(copyStatic, minifyHtml, minifyCss);
 
 export const clean = clear;
